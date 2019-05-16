@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Terms</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_screen">MainScreen</string>
+    <string name="title_activity_term">TermActivity</string>
+    <string name="title_activity_term_rev">TermActivityRev</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_add_term">AddTerm</string>
+    <string name="title_activity_course">CourseActivity</string>
+    <string name="title_activity_add_course">AddCourse</string>
+    <string name="title_activity_assessments">AssessmentsActivity</string>
+    <string name="title_activity_mentors">MentorsActivity</string>
+    <string name="title_activity_add_assessment">AddAssessment</string>
+    <string name="title_activity_add_mentor">AddMentor</string>
+    <string name="title_activity_edit_assessment">EditAssessment</string>
+    <string name="title_activity_edit_course">EditCourse</string>
+    <string name="title_activity_edit_mentor">EditMentor</string>
+    <string name="title_activity_edit_term">EditTerm</string>
+</resources>

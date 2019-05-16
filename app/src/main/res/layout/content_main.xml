@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:paddingTop="60dp"
+        android:textSize="35sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please make sure to add a mentor, assessment and course before creating a term. "
+        android:layout_gravity="center"
+        android:paddingTop="16dp"
+        android:textSize="16sp"
+        />
+
+
+<TableLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    <Button
+        android:id="@+id/termsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Terms"
+        android:textSize="30sp"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:layout_marginBottom="40dp"
+
+    />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/coursesButton"
+        android:layout_height="wrap_content"
+        android:text="View Courses"
+        android:textSize="30sp"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:layout_marginBottom="40dp"
+     />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Assessments"
+        android:id="@+id/assessmentsButton"
+        android:textSize="30sp"
+        android:paddingBottom="1dp"
+        android:paddingTop="16dp"
+        android:layout_marginBottom="40dp"
+     />
+
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Mentors"
+            android:id="@+id/mentorsButton"
+            android:textSize="30sp"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            />
+    </TableRow>
+</TableLayout>
+
+
+</LinearLayout>
+
+
+
+
+</ScrollView>
+
+
+

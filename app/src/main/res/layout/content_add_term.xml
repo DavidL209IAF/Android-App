@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:gravity="center_horizontal"
+    android:paddingTop="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddTerm"
+    tools:showIn="@layout/activity_add_term">
+
+
+    <TextView
+        android:id="@+id/addtermTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="60dp"
+        android:paddingBottom="16dp"
+        android:text="Add Term"
+        android:textSize="26sp"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Term Title:"
+    android:layout_below="@+id/addtermTitleLabel"
+    android:textSize="20sp"
+    android:id="@+id/termTitleLabel"
+    android:paddingBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/termTitleInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addtermTitleLabel"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@+id/termTitleLabel"
+        android:gravity="right"
+        android:hint="Enter Title Here"
+        android:paddingBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Date:"
+        android:paddingBottom="10dp"
+        android:paddingTop="32dp"
+        android:layout_below="@+id/termTitleLabel"
+        android:textSize="20sp"
+        android:id="@+id/startDateLabel"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/termStartDateInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/termTitleInput"
+        android:layout_gravity="center"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/startDateLabel"
+        android:text="Select Date"
+        android:textSize="20sp" />
+
+    <TextView
+        android:paddingTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Date:"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/startDateLabel"
+        android:textSize="20sp"
+        android:id="@+id/endDateLabel"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/termEndDateInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/termStartDateInput"
+        android:layout_gravity="center"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/endDateLabel"
+        android:text="Select Date"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:id="@+id/breakline"
+        android:layout_below="@+id/endDateLabel"
+        android:background="#c0c0c0"/>
+
+    <TextView
+        android:paddingTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Courses"
+        android:id="@+id/coursesLabel"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/breakline"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select from the courses below to add them to the term. If you do not see any courses, make sure you have created at least one course."
+        android:paddingBottom="16dp"
+        android:layout_below="@+id/coursesLabel"
+        android:id="@+id/courseInfo"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+    <ListView
+        android:id="@+id/termsCourse_list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/courseInfo"
+        android:paddingBottom="96dp">
+    </ListView>
+
+
+
+
+</RelativeLayout>
+</ScrollView>

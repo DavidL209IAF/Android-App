@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:gravity="center_horizontal"
+    android:paddingTop="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddMentor"
+    tools:showIn="@layout/activity_add_mentor">
+
+    <TextView
+        android:id="@+id/addmentorTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="60dp"
+        android:paddingBottom="16dp"
+        android:text="Add Mentor"
+        android:textSize="26sp"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mentor Name"
+        android:layout_below="@+id/addmentorTitleLabel"
+        android:textSize="20sp"
+        android:id="@+id/mentorNameLabel"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/mentorNameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addmentorTitleLabel"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@+id/mentorNameLabel"
+        android:gravity="right"
+        android:hint="Enter Mentor Name"
+        android:paddingBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number:"
+        android:paddingBottom="10dp"
+        android:paddingTop="32dp"
+        android:layout_below="@+id/mentorNameLabel"
+        android:textSize="20sp"
+        android:id="@+id/mentorPhoneLabel"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/mentorPhoneInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mentorNameInput"
+        android:layout_gravity="center"
+        android:layout_marginLeft="49dp"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/mentorPhoneLabel"
+        android:hint="111-111-1111"
+        android:textSize="20sp" />
+
+    <TextView
+        android:paddingTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mentor Email:"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/mentorPhoneLabel"
+        android:textSize="20sp"
+        android:id="@+id/mentorEmailLabel"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/mentorEmailInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mentorPhoneInput"
+        android:layout_gravity="center"
+        android:layout_marginLeft="61dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/mentorEmailLabel"
+        android:hint="mentor@test.com"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:id="@+id/breakline"
+        android:layout_below="@+id/mentorEmailLabel"
+        android:background="#c0c0c0"/>
+
+
+
+</RelativeLayout>
+</ScrollView>

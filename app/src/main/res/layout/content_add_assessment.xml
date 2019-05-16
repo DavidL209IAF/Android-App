@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:gravity="center_horizontal"
+    android:paddingTop="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddAssessment"
+    tools:showIn="@layout/activity_add_assessment">
+
+    <TextView
+        android:id="@+id/addassessmentTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="60dp"
+        android:paddingBottom="16dp"
+        android:text="Add Assessment"
+        android:textSize="26sp"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assessment Title:"
+        android:layout_below="@+id/addassessmentTitleLabel"
+        android:textSize="20sp"
+        android:id="@+id/assessmentTitleLabel"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/assessmentTitleInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addassessmentTitleLabel"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="-4dp"
+        android:layout_toRightOf="@+id/assessmentTitleLabel"
+        android:gravity="right"
+        android:hint="Enter Title Here"
+        android:paddingBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Due Date:"
+        android:paddingBottom="10dp"
+        android:paddingTop="32dp"
+        android:layout_below="@+id/assessmentTitleLabel"
+        android:textSize="20sp"
+        android:id="@+id/dueDateLabel"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/assessmentDueDateInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/assessmentTitleInput"
+        android:layout_gravity="center"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/dueDateLabel"
+        android:text="Select Date"
+        android:textSize="20sp" />
+
+    <TextView
+        android:paddingTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goal Date:"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/dueDateLabel"
+        android:textSize="20sp"
+        android:id="@+id/goalDateLabel"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/goalDateInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/assessmentDueDateInput"
+        android:layout_gravity="center"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/goalDateLabel"
+        android:text="Select Date"
+        android:textSize="20sp" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:paddingTop="32dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Objective"
+        android:id="@+id/objCheckBox"
+        android:layout_below="@+id/goalDateAlertLabel"/>
+
+    <CheckBox
+        android:id="@+id/perCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GDAlertCheckBox"
+        android:layout_gravity="center"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="-15dp"
+        android:layout_toRightOf="@+id/objCheckBox"
+        android:paddingTop="32dp"
+        android:paddingBottom="10dp"
+        android:text="Performance"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:id="@+id/breakline"
+        android:layout_below="@+id/objCheckBox"
+        android:background="#c0c0c0"/>
+
+    <TextView
+        android:paddingTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goal Date Alert:"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/goalDateLabel"
+        android:textSize="20sp"
+        android:id="@+id/goalDateAlertLabel"
+        android:layout_gravity="center"/>
+
+    <CheckBox
+        android:id="@+id/GDAlertCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/goalDateInput"
+        android:layout_gravity="center"
+        android:layout_marginLeft="73dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@+id/objCheckBox"
+        android:paddingTop="32dp"
+        android:paddingBottom="10dp"
+        android:textSize="20sp" />
+
+
+
+</RelativeLayout>
+</ScrollView>

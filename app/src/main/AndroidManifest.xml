@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.c196.c196">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TermActivityRev"
+            android:label="Terms"
+            android:parentActivityName=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.c196.c196.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AddTerm"
+            android:label="Add A Term"
+            android:parentActivityName=".TermActivityRev"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.c196.c196.TermActivityRev" />
+        </activity>
+        <activity
+            android:name=".CourseActivity"
+            android:label="Courses"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.c196.c196.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AddCourse"
+            android:label="Add A Course"
+            android:parentActivityName=".CourseActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.c196.c196.CourseActivity" />
+        </activity>
+        <activity
+            android:name=".AssessmentsActivity"
+            android:label="Assessments"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.c196.c196.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MentorsActivity"
+            android:label="Mentors"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.c196.c196.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AddAssessment"
+            android:label="Add An Assessment"
+            android:parentActivityName=".AssessmentsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.c196.c196.AssessmentsActivity" />
+        </activity>
+        <activity
+            android:name=".AddMentor"
+            android:label="Add A Mentor"
+            android:parentActivityName=".MentorsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize">
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.c196.c196.MentorsActivity" />
+        </activity>
+        <activity
+            android:name=".EditAssessment"
+            android:label="Edit An Assessment"
+            android:parentActivityName=".AssessmentsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize">
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.c196.c196.AssessmentsActivity" />
+        </activity>
+        <activity
+            android:name=".EditCourse"
+            android:label="Edit A Course"
+            android:parentActivityName=".CourseActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize">
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.c196.c196.CourseActivity" />
+        </activity>
+        <activity
+            android:name=".EditMentor"
+            android:label="Edit A Mentor"
+            android:parentActivityName=".MentorsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize">
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.c196.c196.MentorsActivity" />
+        </activity>
+        <activity
+            android:name=".EditTerm"
+            android:label="Edit A Term"
+            android:parentActivityName=".TermActivityRev"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize">
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.c196.c196.TermActivityRev" />
+        </activity>
+
+        <receiver
+            android:name=".NotificationPub"
+            android:enabled="true"
+            android:exported="true" />
+
+    </application>
+
+</manifest>
